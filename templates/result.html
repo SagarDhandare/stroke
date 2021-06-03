@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:black">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h1><i class="fas fa-stethoscope-2x"></i>Stroke Prediction<i class="fas fa-stethoscope-2x"></i></h1>
+
+        <br><br><br>
+            <h2>{{ prediction_text }}<h2>
+
+
+
+        </form>
+
+    </div>
+
+
+
+    <style>
+        body {
+            background-color: #8792a3;
+            text-align: center;
+            padding: 0px;
+        }
+
+    </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</body>
+
+</html>
